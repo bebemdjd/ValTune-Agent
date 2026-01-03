@@ -1,0 +1,22 @@
+model: yolov8m.pt  # Pretrained model
+data: coco128.yaml  # Dataset config
+epochs: 100
+batch: 16
+imgsz: 640
+lr: 0.001
+weight_decay: 0.0005
+momentum: 0.937
+patience: 20
+device: 0  # GPU device
+
+# Paths
+run_dir: ./runs  # Will be overridden by agent
+save: true
+exist_ok: false
+
+# Training options
+augment: true
+dropout: 0.0
+
+# 你的“基线配置”。Agent 每轮会在这个基础上打 patch。
+# 实习作品加分点：你可以提供 2~3 个 base（small/medium/large），展示你对工程可复用性的考虑。

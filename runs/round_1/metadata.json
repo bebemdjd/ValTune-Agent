@@ -1,0 +1,42 @@
+{
+  "round": 1,
+  "config": {
+    "model": "yolov8m.pt",
+    "data": "coco128.yaml",
+    "epochs": 100,
+    "batch": 16,
+    "imgsz": 640,
+    "lr": 0.0005,
+    "weight_decay": 0.0008,
+    "momentum": 0.937,
+    "patience": 20,
+    "device": 0,
+    "run_dir": "./runs",
+    "save": true,
+    "exist_ok": false,
+    "augment": true,
+    "dropout": 0.0
+  },
+  "metrics": {
+    "map_50": 0.7138,
+    "map_50_95": 0.4981,
+    "precision": 0.655,
+    "recall": 0.6196,
+    "val_loss": 0.258,
+    "epoch": 100,
+    "timestamp": null
+  },
+  "decision": {
+    "action": "improve",
+    "reason": "mAP50 increased from 0.6996 to 0.7138 (+0.0142), mAP50-95 improved from unknown baseline, and validation loss is low at 0.2580. The model is learning well with current hyperparameters. Continue with same settings but increase image size to potentially capture more details and improve detection accuracy.",
+    "patch": {
+      "lr": null,
+      "batch_size": null,
+      "weight_decay": null,
+      "epochs": null,
+      "imgsz": 800,
+      "other_fields": null
+    },
+    "next_epochs": 50
+  }
+}

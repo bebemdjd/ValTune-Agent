@@ -1,0 +1,42 @@
+{
+  "round": 2,
+  "config": {
+    "model": "yolov8m.pt",
+    "data": "coco128.yaml",
+    "epochs": 100,
+    "batch": 16,
+    "imgsz": 800,
+    "lr": 0.0005,
+    "weight_decay": 0.0008,
+    "momentum": 0.937,
+    "patience": 20,
+    "device": 0,
+    "run_dir": "./runs",
+    "save": true,
+    "exist_ok": false,
+    "augment": true,
+    "dropout": 0.0
+  },
+  "metrics": {
+    "map_50": 0.7241,
+    "map_50_95": 0.4736,
+    "precision": 0.6218,
+    "recall": 0.6067,
+    "val_loss": 0.2623,
+    "epoch": 100,
+    "timestamp": null
+  },
+  "decision": {
+    "action": "improve",
+    "reason": "mAP50 increased from 0.7138 to 0.7241 (+0.0103), mAP50-95 also improved from previous round. Both metrics showing steady improvement with stable validation loss. Continue training with current configuration as it's working well.",
+    "patch": {
+      "lr": null,
+      "batch_size": null,
+      "weight_decay": null,
+      "epochs": null,
+      "imgsz": null,
+      "other_fields": null
+    },
+    "next_epochs": 50
+  }
+}

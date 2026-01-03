@@ -1,0 +1,15 @@
+augment: true
+batch: 16
+data: coco128.yaml
+device: 0
+dropout: 0.0
+epochs: 100
+exist_ok: false
+imgsz: 640
+lr: 0.0005
+model: yolov8m.pt
+momentum: 0.937
+patience: 20
+run_dir: ./runs
+save: true
+weight_decay: 0.0008

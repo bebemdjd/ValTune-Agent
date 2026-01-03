@@ -1,0 +1,26 @@
+============================================================
+Mock Training Script
+============================================================
+[Mock Training] Starting simulation...
+[Mock Training] Config: D:\研究生\Agent练习\ValTune-Agent\runs\round_2\config.yaml
+[Mock Training] Output: D:\研究生\Agent练习\ValTune-Agent\runs\round_2
+[Mock Training] Simulating 2.0 seconds...
+[Mock Training] Simulation complete!
+[Mock Training] mAP50: 0.7213
+[Mock Training] Results saved to: D:\研究生\Agent练习\ValTune-Agent\runs\round_2\results.json
+, val_loss=0.4957
+Epoch  50/100: mAP50=0.6037, mAP50-95=0.3991, val_loss=0.4066
+Epoch  60/100: mAP50=0.6322, mAP50-95=0.4310, val_loss=0.3536
+Epoch  70/100: mAP50=0.6842, mAP50-95=0.4844, val_loss=0.3657
+Epoch  80/100: mAP50=0.7032, mAP50-95=0.5050, val_loss=0.2833
+Epoch  90/100: mAP50=0.7102, mAP50-95=0.4905, val_loss=0.2723
+Epoch 100/100: mAP50=0.7241, mAP50-95=0.4736, val_loss=0.2623
+
+Final Results:
+  mAP50:    0.7213
+  mAP50-95: 0.4821
+  Precision: 0.6773
+  Recall:    0.6185
+  Val Loss:  0.2212
+
+Training completed successfully!

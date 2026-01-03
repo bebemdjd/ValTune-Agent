@@ -1,0 +1,13 @@
+{
+  "epoch": 100,
+  "metrics/mAP50(B)": 0.6996,
+  "metrics/mAP50-95(B)": 0.4812,
+  "metrics/precision(B)": 0.6418,
+  "metrics/recall(B)": 0.624,
+  "val/loss": 0.3414,
+  "train/box_loss": 0.239,
+  "train/cls_loss": 0.1594,
+  "lr/pg0": 0.001,
+  "batch_size": 16,
+  "weight_decay": 0.0005
+}

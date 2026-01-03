@@ -1,0 +1,42 @@
+{
+  "round": 0,
+  "config": {
+    "model": "yolov8m.pt",
+    "data": "coco128.yaml",
+    "epochs": 100,
+    "batch": 16,
+    "imgsz": 640,
+    "lr": 0.001,
+    "weight_decay": 0.0005,
+    "momentum": 0.937,
+    "patience": 20,
+    "device": 0,
+    "run_dir": "./runs",
+    "save": true,
+    "exist_ok": false,
+    "augment": true,
+    "dropout": 0.0
+  },
+  "metrics": {
+    "map_50": 0.6996,
+    "map_50_95": 0.4812,
+    "precision": 0.6418,
+    "recall": 0.624,
+    "val_loss": 0.3414,
+    "epoch": 100,
+    "timestamp": null
+  },
+  "decision": {
+    "action": "adjust",
+    "reason": "Initial training shows decent mAP50 (0.6996) but mAP50-95 is relatively low (0.4812), suggesting model struggles with stricter IoU thresholds. Precision (0.6418) and recall (0.6240) are balanced but could be improved. Val loss (0.3414) is reasonable but not optimal. The model may benefit from a slightly lower learning rate for finer tuning and increased weight decay for better generalization.",
+    "patch": {
+      "lr": 0.0005,
+      "batch_size": null,
+      "weight_decay": 0.0008,
+      "epochs": null,
+      "imgsz": null,
+      "other_fields": null
+    },
+    "next_epochs": 50
+  }
+}
