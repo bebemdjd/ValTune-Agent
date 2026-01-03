@@ -40,10 +40,6 @@ ValTune-Agent/
 ## 🛠️ Installation
 
 ```bash
-# Clone repository
-git clone https://github.com/yourusername/ValTune-Agent.git
-cd ValTune-Agent
-
 # Install dependencies
 pip install -r requirements.txt
 
@@ -303,11 +299,5 @@ MIT License - see [LICENSE](LICENSE) for details
 
 ---
 
-## 📧 Contact
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/ValTune-Agent/issues)
-- **Email**: your.email@example.com
-
----
-
 **⭐ Star this repo if ValTune-Agent helps your research!**
+
