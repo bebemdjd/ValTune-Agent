@@ -99,7 +99,7 @@ def main():
     parser.add_argument(
         "--api-key",
         type=str,
-        default="sk-997fd694504445b293eb2eaede6c5853",
+        default="sk-",
         help="DeepSeek API key (overrides environment variable)"
     )
     
@@ -259,3 +259,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
